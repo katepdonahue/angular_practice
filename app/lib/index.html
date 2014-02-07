@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="whateverApp">
+  <head>
+    <title>my first angular</title>
+  </head>
+  <body ng-controller="WhateverListCtrl">
+    <ul>
+      <li ng-repeat="whatever in whatevers">
+        <img ng-src="img/whatevers/{{whatever.name}}.jpg"/>
+        <div>
+          <h3>{{whatever.name}}</h3>
+          <p>Attribute: {{whatever.attribute}}</p>
+        </div>
+    </ul>
+  </body>
+</html>
