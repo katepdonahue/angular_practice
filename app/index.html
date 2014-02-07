@@ -9,7 +9,7 @@
     <h1>Handshakes</h1>
     <ul>
       <li ng-repeat="handshake in handshakes">
-        <img ng-src="img/handshakes/{{handshake.name}}.gif"/>
+        <img ng-src="{{handshake.imgURL}}"/>
         <div>
           <h3>{{handshake.name}}</h3>
           <p>Attribute: {{handshake.attributes}}</p>
