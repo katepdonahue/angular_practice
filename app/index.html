@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="handshakesApp">
+<html ng-app="handshakeApp">
   <head>
     <title>handshakes angular</title>
     <script src="lib/angular/angular.min.js"></script>
@@ -9,10 +9,11 @@
     <h1>Handshakes</h1>
     <ul>
       <li ng-repeat="handshake in handshakes">
-        <img ng-src="img/handshakes/{{whatever.name}}.jpg"/>
+        <img ng-src="img/handshakes/{{handshake.name}}.gif"/>
         <div>
           <h3>{{handshake.name}}</h3>
-          <p>Attribute: {{handshake.attribute}}</p>
+          <p>Attribute: {{handshake.attributes}}</p>
+          <p>Context: {{handshake.context}}</p>
         </div>
       </li>
     </ul>
