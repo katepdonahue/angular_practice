@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="handshakesApp">
+  <head>
+    <title>handshakes angular</title>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controller.js"></script>
+  </head>
+  <body ng-controller="HandshakeListCtrl">
+    <h1>Handshakes</h1>
+    <ul>
+      <li ng-repeat="handshake in handshakes">
+        <img ng-src="img/handshakes/{{whatever.name}}.jpg"/>
+        <div>
+          <h3>{{handshake.name}}</h3>
+          <p>Attribute: {{handshake.attribute}}</p>
+        </div>
+    </ul>
+  </body>
+</html>
